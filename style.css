@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+}
+
+nav {
+    position: relative;
+    background-color: #20c997;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/400x400'); /* Replace with a relevant background image or pattern */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    background-color: #00454a;
+    overflow: hidden;
+}
+
+#shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circle, .rectangle {
+    position: absolute;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #20c997;
+    border-radius: 50%;
+    top: 10%;
+    left: 5%;
+}
+
+.rectangle {
+    width: 50px;
+    height: 150px;
+    background-color: #20c997;
+    top: 60%;
+    left: 80%;
+}
+
+#about, #services, #testimonials, #contact {
+    position: relative;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#about::before, #services::before, #testimonials::before, #contact::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background-image: url('https://via.placeholder.com/400x400'); /* Replace with a relevant background image or pattern */
+    z-index: -1;
+}
+
+#logo-img {
+    height: 50px; /* Or any size as per your design */
+    margin-left: 20px; /* Optional, to add some spacing */
+}
+
+#logo, ul {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    background-image: url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+#hero-content h1 {
+    font-size: 3em;
+}
+
+#hero-content p {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #20c997;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #17866d;
+}
+
+#about, #services, #testimonials, #contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.service, .testimonial {
+    max-width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input, textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #20c997;
+    color: #fff;
+}
